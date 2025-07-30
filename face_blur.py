@@ -64,7 +64,7 @@ def main():
                 face_roi = frame[y_min:y_max, x_min:x_max]
                 blurred_face = cv2.GaussianBlur(face_roi, (99, 99), 30)
                 frame[y_min:y_max, x_min:x_max] = blurred_face
-        else:# this is a falllback if no face is deeteected so u fuckass nobody dont gget urself exposed
+        else:# this is a falllback if no face is deeteected so u nobody dont gget urself exposed :3
             frame = cv2.GaussianBlur(frame, (99, 99), 30)
             h, w, _ = frame.shape
             text = 'No Face Detected'
